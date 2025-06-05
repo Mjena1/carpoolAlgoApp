@@ -5,3 +5,4 @@ polyline
 gmaps
 python-dotenv
 folium
+streamlit_folium
