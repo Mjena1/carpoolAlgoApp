@@ -425,7 +425,7 @@ def demo_to_office_page():
                         for d_lat, d_lon, d_name in driver_locations_map:
                             folium.Marker([d_lat, d_lon], tooltip=f"{d_name} (Driver)", icon=folium.Icon(color='red', icon='car')).add_to(m)
 
-                        st_folium(m, width="100%", height=600) # Make map slightly larger
+                        st_folium(m, width="100%", height="100%") # Make map slightly larger
                     else:
                         st.warning("No valid locations entered to display on the map.")
                 except Exception as e:
@@ -592,7 +592,7 @@ def demo_from_office_page():
                         for d_lat, d_lon, d_name in driver_locations_map:
                             folium.Marker([d_lat, d_lon], tooltip=f"{d_name} (Driver)", icon=folium.Icon(color='red', icon='car')).add_to(m)
 
-                        st_folium(m, width="100%",  height=550)
+                        st_folium(m, width="100%",  height="100%")
                     else:
                         st.warning("No valid locations entered to display on the map.")
                 except Exception as e:
