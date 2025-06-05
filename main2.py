@@ -19,7 +19,7 @@ from plotFrom import plot as plot_from_office
 load_dotenv()
 # API_KEY = os.getenv('api_key')
 # Fallback for Streamlit Cloud deployment if using secrets:
-API_KEY = st.secrets['Maps_api_key'] # Make sure this matches your secret name
+API_KEY = st.secrets['api_key'] # Make sure this matches your secret name
 
 ADMIN_EMAIL = "admin@admin.com"
 ADMIN_PASSWORD = "admin"
