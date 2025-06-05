@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 # --- Configuration & Constants ---
 load_dotenv()
-api_key = st.secrets['api_key']
+API_KEY = st.secrets['api_key']
 
 # Default values for aerial distance calculation
 EARTH_RADIUS_KM = 6371
