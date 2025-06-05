@@ -1,3 +1,4 @@
+import streamlit as st
 import math
 from typing import Dict, List, Tuple, Union, Any
 import requests
@@ -7,7 +8,7 @@ from dotenv import load_dotenv
 
 # --- Configuration & Constants ---
 load_dotenv()
-API_KEY = os.getenv('api_key')
+api_key = st.secrets['api_key']
 
 # Default values for aerial distance calculation
 EARTH_RADIUS_KM = 6371
