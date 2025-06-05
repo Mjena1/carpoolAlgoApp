@@ -659,7 +659,7 @@ def display_results_to_office(locations: Dict[str, Any], assignments: Dict[str, 
     
     m = plot_to_office(locations, assignments, driver_paths)
     if m is not None:
-        st_folium(m, width=1000, height=650) # Increased map size
+        st_folium(m, width=2000, height=650) # Increased map size
     else:
         st.error("Map could not be generated. Ensure the `plot_to_office` function works correctly and returns a Folium map object.")
 
@@ -694,7 +694,7 @@ def display_results_from_office(locations: Dict[str, Any], assignments: Dict[str
     
     m = plot_from_office(locations, assignments, driver_paths)
     if m is not None:
-        st_folium(m, width=1000, height=650) # Increased map size
+        st_folium(m, width=2000, height=650) # Increased map size
     else:
         st.error("Map could not be generated. Ensure the `plot_from_office` function works correctly and returns a Folium map object.")
 
