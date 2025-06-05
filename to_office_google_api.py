@@ -1,4 +1,5 @@
 #This can handle only one companion
+import streamlit as st
 import math
 from typing import Dict, List, Tuple,Union
 import requests
@@ -9,7 +10,7 @@ import os
 
 load_dotenv()
 
-api_key = os.getenv('api_key')
+api_key = st.secrets['api_key']
 
 #*********************************** Google Map Api Functions ***************************************
 def get_directions(origin, destination, api_key):
