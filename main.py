@@ -39,7 +39,7 @@ DEFAULT_TO_OFFICE_DRIVERS = [
 DEFAULT_FROM_OFFICE_COMPANIONS = [
     ("Manab", "Zolo Arena, Bangalore"),
     ("Rohith", "Munnekolal, Bangalore"),
-    ("Sayan", "Kundalahalli Railway Station, Bangalore"),
+    ("Sayan", "Kundalahalli Metro Station, Bangalore"),
     ("Aman", "DMart, Siddapura, Bangalore"),
     ("Hitesh", "EcoSpace, Bellandur, Bangalore")
 ]
