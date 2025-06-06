@@ -102,7 +102,7 @@ def plot(locations, assignments, driver_paths):
                 'origin': f"{companion_coord[0]},{companion_coord[1]}",
                 'destination': f"{meeting_point[0]},{meeting_point[1]}",
                 'key': api_key,
-                'mode': 'driving'
+                'mode': 'walking'
             }
             response = requests.get(url, params=params).json()
             if response['status'] == 'OK':
